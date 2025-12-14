@@ -44,7 +44,7 @@ if args.output:
     output_gif = args.output
 else:
     image_name = os.path.splitext(os.path.basename(image_path))[0]
-    output_gif = f'{image_name}.gif'
+    output_gif = os.path.join(os.path.dirname(image_path), f'{image_name}.gif')
 
 print(f"Image: {image_path}")
 print(f"Steps: {num_steps}")
