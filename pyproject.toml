@@ -13,7 +13,6 @@ dependencies = [
 
 [project.optional-dependencies]
 cuda = [
-    "xlb[cuda]>=0.3.0",
-    "jax[cuda]==0.8.0",
+    "jax[cuda12]==0.8.0",
 ]
 

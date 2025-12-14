@@ -20,7 +20,7 @@ fi
 for png_file in "$INPUT_DIR"/*.png; do
     if [[ -f "$png_file" ]]; then
         echo "Processing file: $png_file"
-        uv run python3 sim.py ${png_file} --steps 10000 --post-process-interval 20 --gif-fps 60
+        uv run python3 sim.py ${png_file} --steps 5000 --post-process-interval 15g --gif-fps 60
         echo "Finished processing $png_file"
     else
         echo "No PNG files found in the directory."
