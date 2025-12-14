@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 INPUT_DIR=$1
-
+unset LD_LIBRARY_PATH
 if ! command -v uv &> /dev/null; then
     echo "uv could not be found, installing it it."
     pip3 install uv
