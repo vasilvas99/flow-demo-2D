@@ -8,10 +8,12 @@ dependencies = [
     "matplotlib>=3.10.8",
     "pillow>=12.0.0",
     "xlb>=0.3.0",
+    "jax==0.8.0",
 ]
 
 [project.optional-dependencies]
 cuda = [
     "xlb[cuda]>=0.3.0",
+    "jax[cuda]==0.8.0",
 ]
 
